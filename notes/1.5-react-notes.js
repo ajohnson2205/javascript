@@ -25,17 +25,34 @@
     //forEach can return to the current array, or to a new one
 
 
-  // Array.map()
+  // Array.map()    => puts it into a new, empty array
     //Transforms an array of values
     //Works just like a forEach except it returns the new values
     //It makes a new empty array and puts the values in there one at a time
-      //The old array is untouch and unmodified
+      //The old array is untouched and unmodified
     var ages = [53, 50, 29, 22, 16];
     var ages2017 = ages2016.map(function(element) {
       return element + 1;
     });
 
 
-  // Array.filter()
+  // Array.filter()      => puts it into a new, empty array
     //A way to pull out certain pieces of our array based on critera
-    
+    //Give it a function to test the items and it should return a boolean
+    //Creates a new, empty array
+      //The old array is untouched and unmodified
+
+    var names = ["Suzie", "Ben", "Mark", "Franklin"];
+    var shortNames = names.filter(function(val, i, arr) {
+      return val.length < 5;
+    })
+
+
+
+/*  WELCOME TO REACT  */
+
+  /*
+
+  JS library for building UIs
+  Uses JSX
+    We can write HTML elements directly into our JS
